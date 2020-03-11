@@ -127,13 +127,13 @@ try:
         # py35+
         from collections.abc import Generator as GeneratorType  # type: ignore
     except ImportError:
-        from backports_abc import Generator as GeneratorType  # type: ignore
+        from .backports_abc import Generator as GeneratorType  # type: ignore
 
     try:
         # py35+
         from inspect import isawaitable  # type: ignore
     except ImportError:
-        from backports_abc import isawaitable
+        from .backports_abc import isawaitable
 except ImportError:
     if 'APPENGINE_RUNTIME' not in os.environ:
         raise
