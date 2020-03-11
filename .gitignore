@@ -13,6 +13,6 @@ nosetests.xml
 
 # Visual Studio
 
-/.vs
+/.vs*
 
 .DS_Store
